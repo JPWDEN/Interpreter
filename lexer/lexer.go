@@ -15,7 +15,7 @@ type Lexer struct {
 }
 
 //New returns a new Lexer object
-func New(inputSourceCode string) *Lexer {
+func NewLexer(inputSourceCode string) *Lexer {
 	l := &Lexer{input: inputSourceCode}
 	l.readChar()
 	return l
